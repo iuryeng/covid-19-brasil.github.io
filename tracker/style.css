@@ -80,8 +80,7 @@ a:hover{
   border:solid 2px #343c49;
 }
 
-.column-top-indicators{
-  
+.column-top-indicators{  
   float: left;
   width: 300px;
   margin: 5px;
@@ -90,9 +89,13 @@ a:hover{
 
 .column{ 
   float: left;
-  width: 50%;
+  width: 70%;
   margin: 10px;
   padding: 5px;
+}
+
+.column-chart canvas{
+height: 500px; 
 }
 
 .row{  
