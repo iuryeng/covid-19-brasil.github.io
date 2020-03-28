@@ -6,17 +6,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
 	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 	<script type="text/javascript" src="main.js"></script>
-	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117039075-2"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-
-		  gtag('config', 'UA-117039075-2');
-		</script>
-		<title>Covid-19 Brasil Tracker</title>
+	<head>		
+	<title>Covid-19 Brasil Tracker</title>
 	</head>
 	<body>
 		<div class="header">
@@ -40,7 +31,7 @@
 		    <div class="column-top-indicators" style="color:#ffa91c">
 		    	<i class="fas fa-percent fa-2x"></i>
 			    <h2>Porcentagem de Óbitos</h2>
-			    <p class="p-top-nav">2,7%</p>
+			    <p class="p-top-nav">2,6%</p>
 		    </div>  
 		</div>
 		<div class="topnav">
@@ -51,17 +42,17 @@
 		</div>
 		<div class="row">
 		  <div class="column">
-		    <table id="covid-table" class="covid-table-indicator">
-		    	<tr>
-		    		<th>UF</th>
-		    		<th>ESTADO</th>
-		    		<th>CONFIRMADOS</th>
-		    		<th>ÓBITOS</th>
-		    	</tr>    	
-		    </table>
-		  </div>  
-		  <div class="column-chart">    
-		    <canvas id="covidChart"></canvas>  		      
+			    <table id="covid-table" class="covid-table-indicator">
+			    	<tr>
+			    		<th>UF</th>
+			    		<th>ESTADO</th>
+			    		<th>CONFIRMADOS</th>
+			    		<th>ÓBITOS</th>
+			    	</tr>    	
+			    </table>
+			  </div>  
+			<div class="column-chart">    
+			    <canvas  id="covidChart" ></canvas>  		      
 		  </div> 
 		</div>
 	</body>	
