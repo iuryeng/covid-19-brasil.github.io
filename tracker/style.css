@@ -131,7 +131,7 @@ height: 500px;
 
 .covid-table-indicator tr:hover {background-color: #ddd;}
 
-@media screen and (max-width:800px){
+@media screen and (max-width:900px){
  .row{flex-direction: column; }
  .row-top-indicators {flex-direction: column;}
  .topnav {flex-direction: column;}
