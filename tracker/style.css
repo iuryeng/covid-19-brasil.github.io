@@ -80,14 +80,15 @@ a:hover{
   border:solid 2px #343c49;
 }
 
-.column-top-indicators{  
+.column-top-indicators{
+  
   float: left;
   width: 300px;
   margin: 5px;
   padding: 20px;
 }
 
-.column{ 
+.column{  
   float: left;
   width: 70%;
   margin: 10px;
@@ -107,11 +108,16 @@ height: 500px;
   text-align: justify;
 }
 
+
+
 .covid-table-indicator{
   width: 100%; 
   border: solid #f2f2f2;
 }
 
+.column-chart{
+  width: 100%;
+}
 .covid-table-indicator th{ 
   padding: 5px;
   text-align: center;
