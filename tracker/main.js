@@ -15,7 +15,7 @@ async function createChart() {
 	        datasets: [
 		        {
 		        	fill: false,
-		            label: 'Casos Confirmados por UF',
+		            label: 'Casos Confirmados',
 		            data: ylabels,
 		            backgroundColor: 'rgba(255, 99, 132, 0.2)',
 		            borderColor: 'rgba(255, 99, 132, 1)',
