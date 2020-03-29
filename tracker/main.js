@@ -2,6 +2,8 @@
 const json_data = ("covid.json");
 const  xlabels =[];
 const ylabels=[];  
+const yobitos=[];
+
 createChart();
 
 // function for construct chart 
@@ -10,23 +12,36 @@ async function createChart() {
 	const ctx = document.getElementById('covidChart').getContext('2d');
 	const myChart = new Chart(ctx, {
 	    type: 'line',
-	    data: {
-	        labels: xlabels,
-	        datasets: [
-		        {
-		        	
-		            label: 'Casos Confirmados',
-		            data: ylabels,
-		            backgroundColor: 'rgba(255, 99, 132, 0.2)',
-		            borderColor: 'rgba(255, 99, 132, 1)',
-		            borderWidth: 2
-		        }
-	        ]
+	    data: {	        
+	        datasets: [{   
+		        label: 'Confirmados',
+		        data: ylabels,
+		        fill:false,
+		        backgroundColor: 'mediumturquoise',
+		        borderColor: 'mediumturquoise',
+		        borderWidth: 2		          
+		    },{
+		        label: 'Obitos',
+		        data: yobitos,                
+		        type:'line',
+		        fill:false,
+		        backgroundColor: 'lightcoral',
+		        borderColor: 'lightcoral',
+		        borderWidth: 2	
+	        }],
+	        labels:xlabels
 	    },
 	    options: {
 	        responsive: true,
-	        maintainAspectRatio: true,
-
+	        maintainAspectRatio: false,
+	         layout: {
+            padding: {
+                left: 50,
+                right: 50,
+                top: 0,
+                bottom: 0
+            }
+        }
 	    }
 	});
 }
@@ -38,6 +53,7 @@ async function getDateChart() {
 	for (var i = 0; i< data.length; i++){
 			xlabels.push((data[i]["estado"]));
 			ylabels.push((data[i]["casosConfirmados"]));	
+			yobitos.push((data[i]["obitos"]));
 	}	
 }
 
