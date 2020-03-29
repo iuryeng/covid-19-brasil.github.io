@@ -19,15 +19,15 @@ async function createChart() {
 		        fill:false,
 		        backgroundColor: 'mediumturquoise',
 		        borderColor: 'mediumturquoise',
-		        borderWidth: 2		          
+		        borderWidth: 3		          
 		    },{
-		        label: 'Obitos',
+		        label: 'Óbitos',
 		        data: yobitos,                
 		        type:'line',
 		        fill:false,
 		        backgroundColor: 'lightcoral',
 		        borderColor: 'lightcoral',
-		        borderWidth: 2	
+		        borderWidth: 3	
 	        }],
 	        labels:xlabels
 	    },
