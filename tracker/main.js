@@ -149,7 +149,7 @@ async function getDateChart() { // funcao para capurar do arquivo json os dados 
 	"use strict";
 	numConfirmados = sum(ylabels,numEstados); // somando numero de casos confirmados
 	numMortos = sum(yobitos,numEstados); // somando numero de obitos 
-	maiorNumObitos = Math.max.apply(null, yobitos); //maior numero de mortos -- numrero maximo de um array    
+	maiorNumObitos = Math.max(...yobitos); //maior numero de mortos -- numero maximo de um array    
 	data.forEach(function(x) { //separando numero de obitos por estado
 		estadoObitos[x.obitos] = x.uf;
 	});
