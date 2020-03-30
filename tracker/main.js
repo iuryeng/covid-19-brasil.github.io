@@ -59,7 +59,7 @@ async function createChart() { // funcao para construir o chart covid
 	        maintainAspectRatio: false,
 	        title: {
             display: true,
-            text: 'Especifição dos casos por UF',
+            text: 'Especificação dos casos por UF',
             fontSize: 25,
             fontColor:'rgb(52,60,73)'
         },
