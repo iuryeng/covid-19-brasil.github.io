@@ -43,7 +43,7 @@ async function createChart() { // funcao para construir o chart covid
 		        borderColor: 'mediumturquoise',
 		        borderWidth: 2		          
 		    },{
-		        label: 'Obitos',
+		        label: 'Óbitos',
 		        data: yobitos,                
 		        type:'line',
 		        fill:false,
