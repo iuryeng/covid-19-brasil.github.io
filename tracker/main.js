@@ -60,7 +60,7 @@ async function createChart() { // funcao para construir o chart covid
 	        title: {
             display: true,
             text: 'Especificação dos casos por UF',
-            fontSize: 22,
+            fontSize: 20,
             fontColor:'rgb(52,60,73)'
         },
 	        layout: {
@@ -102,7 +102,7 @@ const myChart = new Chart(ctx, {
         title: {
             display: true,
             text: 'Evolução dos casos informados por dia',
-            fontSize: 22,
+            fontSize: 20,
             fontColor:'rgb(52,60,73)'
         },
         layout: {
