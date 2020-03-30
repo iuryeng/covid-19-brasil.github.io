@@ -23,7 +23,7 @@
 	<body>
 		<div class="header">
 			<i class="fas fa-virus fa-3x"></i>
-		  <h1>Covid-19 Brasil Tracker</h1>
+		  <h1>Covid-19 Brasil Tracker</h1>		   
 		  <h2>Acompanhe os casos de infecção no Brasil</h2>
 		  <span>Atualizado em: Domingo, 29 de Março de 2020, 17h50  </span>
 		  <p><span>Referências:<a class="a-color" href="https://saude.gov.br/" target="_blank"> Ministerio da Saúde</a> </span></p>  
@@ -32,23 +32,23 @@
 		    <div class="column-top-indicators" style="color: mediumturquoise;">
 		    	<i class="fas fa-clipboard-check fa-2x"></i>
 			    <h2>Confirmados</h2>
-			    <p class="p-top-nav" >4.256</p>
+			    <p id="num-confirmado" class="p-top-nav" ></p>
 		    </div>
 		    <div class="column-top-indicators" style="color:lightcoral">
 		    	<i class="fas fa-skull-crossbones fa-2x"></i>
 			    <h2>Mortes</h2>
-			    <p class="p-top-nav">136</p>
+			    <p id="num-obito" class="p-top-nav"></p>
 		    </div>
 		    <div class="column-top-indicators" style="color:#ffa91c">
 		    	<i class="fas fa-percent fa-2x"></i>
-			    <h2>Mortalidade</h2>
+			    <h2>Porcentagem de Óbitos</h2>
 			    <p class="p-top-nav">3,2%</p>
-		    </div> 
+		    </div>  
 		    <div class="column-top-indicators" style="color:darkslateblue">
 		    	<i class="fas fa-dizzy fa-2x"></i>
 			    <h2>Maior Letalidade</h2>
 			    <p id="maior-letalidade" class="p-top-nav"></p>			    
-		    </div>
+		    </div> 
 		</div>
 		<div class="topnav">
 			
@@ -57,7 +57,7 @@
 			<a href="https://www.youtube.com/watch?v=aQCnF1yY7Uc" target="_blank"><i class="fas fa-head-side-mask fa-3x"></i></a>  
 		</div>
 		<div class="row">
-		  <div class="column">
+		    <div class="column">
 			    <table id="covid-table" class="covid-table-indicator">
 			    	<tr>
 			    		<th>UF</th>
@@ -67,13 +67,14 @@
 			    	</tr>    	
 			    </table>
 			  </div>  
-		   <div class="column-chart">    
-		     <canvas  id="covidChart" ></canvas>  		      
-		  </div> 
-		   <div class="column-chart">    
+			<div class="column-chart">    
+			    <canvas  id="covidChart" ></canvas>  		      
+		    </div> 		
+		     <div class="column-chart">    
 			    <canvas id="occurrenceChart" height="200"></canvas>	      
-		    </div> 
+		    </div>  
 		</div>
+
 	</body>	
 	<footer>
 		<p style="text-align: center;"><i class="fas fa-globe"></i> for World by <a style="color:white" href="https://www.freecodecamp.org/iurycoelho" target="_blank">@iurycoelho</a></p>	
