@@ -1,15 +1,20 @@
 
 const json_data = ("covid.json");
 const json_data_occurrence = ("occurrence.json");
+const json_data_region = ("casos_regiao.json");
 const xlabels =[];
 const ylabels=[];  
 const yobitos=[];
 const xlabelsOccurrence = [];
 const ylabelsOccurrence = [];
+const labelsRegion = [];
+const labelsRegionCases = [];
+const labelsRegionDeads = [];
 let numEstados = 0;
 let maiorNumObitos = 0;
 let estadoObitos = [];
 let estadoMaiorObtito ="";
+
 
 
 $(document).ready(function(){ // populando a tabela de dados a partir do arquivo json
@@ -43,7 +48,7 @@ async function createChart() { // funcao para construir o chart covid
 		        borderColor: 'mediumturquoise',
 		        borderWidth: 2		          
 		    },{
-		        label: 'Óbitos',
+		        label: 'Obitos',
 		        data: yobitos,                
 		        type:'line',
 		        fill:false,
@@ -59,15 +64,15 @@ async function createChart() { // funcao para construir o chart covid
 	        maintainAspectRatio: false,
 	        title: {
             display: true,
-            text: 'Especificação dos casos por UF',
-            fontSize: 20,
+            text: 'Especifição dos casos por UF',
+            fontSize: 25,
             fontColor:'rgb(52,60,73)'
         },
 	        layout: {
 	            padding: {
 	                left: 50,
 	                right: 50,
-	                top: 0,
+	                top: 100,
 	                bottom: 0
                 }
             }
@@ -77,7 +82,7 @@ async function createChart() { // funcao para construir o chart covid
 
 
 
-async function createChartOccurrence(){
+async function createChartOccurrence(){ // funcao para construir o chart de ocorrencias diarias
 	await getDateOccurrence();
 const ctx = document.getElementById('occurrenceChart').getContext('2d');
 const myChart = new Chart(ctx, {
@@ -87,7 +92,8 @@ const myChart = new Chart(ctx, {
         datasets: [{
             label: 'Casos Novos',
             data: ylabelsOccurrence,
-            backgroundColor:'rgba(54, 162, 235, 1)' 
+            backgroundColor:'rgba(54, 162, 235, 1)',
+            borderColor:'rgba(54, 162, 235, 1)'
           
         }]
     },
@@ -102,21 +108,77 @@ const myChart = new Chart(ctx, {
         title: {
             display: true,
             text: 'Evolução dos casos informados por dia',
-            fontSize: 20,
+            fontSize: 25,
             fontColor:'rgb(52,60,73)'
         },
         layout: {
 	        padding: {
 	            left: 50,
 	            right: 50,
-	            top: 0,
-	             bottom: 0
+	            top: 100,
+	            bottom: 0
             }
         }
 
     }
  });
 }
+
+async function createChartRegion(){
+	await getDateRegion();
+	const ctx = document.getElementById('regionChart').getContext('2d');
+	const myHorizontalChart = new Chart(ctx, {
+	    type: 'horizontalBar',
+	    data: {	        
+	        datasets: [{   
+		        label: 'Confirmados',
+		        data: labelsRegionCases,
+		        fill:false,
+		        backgroundColor: 'mediumseagreen',
+		        borderColor:'mediumseagreen'		                 
+		    },{
+		        label: 'Óbitos',
+		        data: labelsRegionDeads,                
+		        type:'horizontalBar',
+		        fill:false,
+		        backgroundColor: 'gray',
+		        borderColor: 'gray',
+		        borderWidth: 2	
+	        }],
+	        labels:labelsRegion,	      
+	    },
+	    options: {
+	    	title: {
+	            display: true,
+	            text: 'Classificação dos casos por região',	            
+	            fontSize: 25,
+	            fontColor:'rgb(52,60,73)'
+            }, 
+		    layout: {
+		        padding: {
+		            left: 40,
+		            right: 50,
+		            top: 100,
+		            bottom: 100
+	            }
+	        }
+	    }   	      
+
+	});
+}
+
+
+async function getDateRegion(){ // funcao para capurar do arquivo json os dados do grafico de ocorrencias por regiao
+	const response = await fetch(json_data_region);
+	const data = await response.json();
+	for (var i = 0; i< data.length; i++){
+		labelsRegion.push((data[i]["regiao"]));
+		labelsRegionCases.push((data[i]["casos"]));	
+		labelsRegionDeads.push((data[i]["mortes"]));			
+	}	
+}
+
+
 
 async function getDateOccurrence(){ // funcao para capurar do arquivo json os dados do grafico de ocorrencias por dias epidemologicos
 	const response = await fetch(json_data_occurrence);
@@ -156,9 +218,10 @@ async function getDateChart() { // funcao para capurar do arquivo json os dados 
 	estadoMaiorObtito = estadoObitos[maiorNumObitos]; //capturando o estado com maior obito	
     document.getElementById("num-confirmado").innerHTML = numConfirmados; //imprimindo numero de confirmados no top menu
     document.getElementById("num-obito").innerHTML = numMortos;	//imprimindo numero de mortos no top menu
-    document.getElementById("maior-letalidade").innerHTML = `${estadoMaiorObtito}: ${maiorNumObitos}`; //imprimindo esatdo com maior letalidade
+    document.getElementById("maior-letalidade").innerHTML = `${estadoMaiorObtito}: ${maiorNumObitos} mortes `; //imprimindo esatdo com maior letalidade
 }
 
 
 createChart();
 createChartOccurrence();
+createChartRegion();
