@@ -72,7 +72,7 @@ async function createChart() { // funcao para construir o chart covid
 	            padding: {
 	                left: 50,
 	                right: 50,
-	                top: 100,
+	                top: 50,
 	                bottom: 0
                 }
             }
@@ -115,7 +115,7 @@ const myChart = new Chart(ctx, {
 	        padding: {
 	            left: 50,
 	            right: 50,
-	            top: 100,
+	            top: 50,
 	            bottom: 0
             }
         }
@@ -158,8 +158,8 @@ async function createChartRegion(){
 		        padding: {
 		            left: 40,
 		            right: 50,
-		            top: 100,
-		            bottom: 100
+		            top: 50,
+		            bottom: 50
 	            }
 	        }
 	    }   	      
