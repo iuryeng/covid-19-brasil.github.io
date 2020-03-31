@@ -115,7 +115,7 @@ const myChart = new Chart(ctx, {
 	        padding: {
 	            left: 50,
 	            right: 50,
-	            top: 50,
+	            top: 40,
 	            bottom: 0
             }
         }
