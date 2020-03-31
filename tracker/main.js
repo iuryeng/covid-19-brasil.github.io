@@ -148,6 +148,8 @@ async function createChartRegion(){
 	        labels:labelsRegion,	      
 	    },
 	    options: {
+		responsive: true,
+	        maintainAspectRatio: false,
 	    	title: {
 	            display: true,
 	            text: 'Classificação dos casos por região',	            
