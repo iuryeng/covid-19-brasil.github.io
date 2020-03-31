@@ -124,7 +124,7 @@ const myChart = new Chart(ctx, {
  });
 }
 
-async function createChartRegion(){
+async function createChartRegion(){ // funcao para construir o chart de classificação de casos por região
 	await getDateRegion();
 	const ctx = document.getElementById('regionChart').getContext('2d');
 	const myHorizontalChart = new Chart(ctx, {
