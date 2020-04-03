@@ -3,28 +3,28 @@
       "id":"1",
       "uf":"AC",
       "estado":"Acre",
-      "casosConfirmados":43,
+      "casosConfirmados":46,
       "obitos":0
    },
    {
       "id":"2",
       "uf":"AM",
       "estado":"Amazonas",
-      "casosConfirmados":229,
-      "obitos":3
+      "casosConfirmados":260,
+      "obitos":7
    },
    {
       "id":"3",
       "uf":"AP",
       "estado":"Amapá",
-      "casosConfirmados":11,
+      "casosConfirmados":19,
       "obitos":0
    },
    {
       "id":"4",
       "uf":"PA",
       "estado":"Pará",
-      "casosConfirmados":46,
+      "casosConfirmados":50,
       "obitos":1
    },
    {
@@ -38,7 +38,7 @@
       "id":"6",
       "uf":"RR",
       "estado":"Roraima",
-      "casosConfirmados":26,
+      "casosConfirmados":30,
       "obitos":0
    },
    {
@@ -52,140 +52,140 @@
       "id":"8",
       "uf":"AL",
       "estado":"Alagoas",
-      "casosConfirmados":18,
-      "obitos":1
+      "casosConfirmados":22,
+      "obitos":2
    },
    {
       "id":"9",
       "uf":"BA",
       "estado":"Bahia",
-      "casosConfirmados":267,
-      "obitos":3
+      "casosConfirmados":282,
+      "obitos":5
    },
    {
       "id":"10",
       "uf":"CE",
       "estado":"Ceará",
-      "casosConfirmados":550,
-      "obitos":20
+      "casosConfirmados":627,
+      "obitos":22
    },
    {
       "id":"11",
       "uf":"MA",
       "estado":"Maranhão",
-      "casosConfirmados":71,
+      "casosConfirmados":81,
       "obitos":1
    },
    {
       "id":"12",
       "uf":"PB",
       "estado":"Paraíba",
-      "casosConfirmados":21,
+      "casosConfirmados":29,
       "obitos":1
    },
    {
       "id":"13",
       "uf":"PE",
       "estado":"Pernambuco",
-      "casosConfirmados":106,
-      "obitos":9
+      "casosConfirmados":136,
+      "obitos":10
    },
    {
       "id":"14",
       "uf":"PI",
       "estado":"Piauí",
-      "casosConfirmados":19,
+      "casosConfirmados":21,
       "obitos":4
    },
    {
       "id":"15",
       "uf":"RN",
       "estado":"Rio Grande do Norte",
-      "casosConfirmados":105,
-      "obitos":2
+      "casosConfirmados":176,
+      "obitos":4
    },
    {
       "id":"16",
       "uf":"SE",
       "estado":"Sergipe",
-      "casosConfirmados":23,
+      "casosConfirmados":25,
       "obitos":2
    },
    {
       "id":"17",
       "uf":"ES",
       "estado":"Espírito Santo",
-      "casosConfirmados":120,
-      "obitos":1
+      "casosConfirmados":139,
+      "obitos":4
    },
    {
       "id":"18",
       "uf":"MG",
       "estado":"Minas Gerais",
-      "casosConfirmados":370,
-      "obitos":4
+      "casosConfirmados":397,
+      "obitos":6
    },
    {
       "id":"19",
       "uf":"RJ",
       "estado":"Rio de Janeiro",
-      "casosConfirmados":992,
-      "obitos":41
+      "casosConfirmados":1074,
+      "obitos":47
    },
       {
       "id":"20",
       "uf":"SP",
       "estado":"São Paulo",
-      "casosConfirmados":3506,
-      "obitos":188
+      "casosConfirmados":4048,
+      "obitos":219
    },
    {
       "id":"21",
       "uf":"DF",
       "estado":"Distrito Federal",
-      "casosConfirmados":370,
-      "obitos":4
+      "casosConfirmados":402,
+      "obitos":5
    },
    {
       "id":"22",
       "uf":"GO",
       "estado":"Goiás",
-      "casosConfirmados":73,
-      "obitos":1
+      "casosConfirmados":88,
+      "obitos":2
    },
       {
       "id":"23",
       "uf":"MS",
       "estado":"Mato Grosso do Sul",
-      "casosConfirmados":53,
+      "casosConfirmados":60,
       "obitos":1
    },
    {
       "id":"24",
       "uf":"MT",
       "estado":"Mato Grosso",
-      "casosConfirmados":36,
-      "obitos":0
+      "casosConfirmados":44,
+      "obitos":1
    },
    {
       "id":"25",
       "uf":"PR",
       "estado":"Paraná",
-      "casosConfirmados":252,
+      "casosConfirmados":301,
       "obitos":4
    },
       {
       "id":"26",
       "uf":"SC",
       "estado":"Santa Catarina",
-      "casosConfirmados":247,
-      "obitos":2
+      "casosConfirmados":281,
+      "obitos":5
    },
    {
       "id":"27",
       "uf":"RS",
       "estado":"Rio Grande do Sul",
-      "casosConfirmados":334,
+      "casosConfirmados":396,
       "obitos":5
    }
  
