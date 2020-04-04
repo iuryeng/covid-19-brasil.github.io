@@ -3,5 +3,34 @@ Repositório de aplicação web para acompanhamento dos casos de covid-19 no Bra
 
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
+
+Devido a situação atual em que nosso país se encontra e os inúmeros sites que divulgam fake news a respeito do número de casos de covid-19, resolvi criar uma aplicação web que coleta dados sobre o corona virus. A aplicação  é atualizada  o mais rápido possível e pretende fornecer dados consistentes em tabela e gráficos. 
+
+> Basicamente a app web faz um misto entre informações oficiais do ministério da saúde e também de fontes mundiais a respeito de dados coletados em vários sites de notícias e governos locais;
+
+> Conversando com alguns amigos da UFCG tentei acatar algumas sugestões e inovar em uma aplicação que fornecem dados consistentes o mais rápido possível.
+
+> Tive trabalhando alguns dia nisso!,  pra tentar inovar um pouco mais;
+
+> notei que o site do governo atualiza as informações sempre a tardinha e não consta o número de casos recuperados nem o número de casos informados pelas secretarias em tempo hábil. Por exemplo, depois das 21 hrs se algum site de governo local for notificado, os dados só irao ser confirmados pelo ministério a tardinha, talvez por  medidas até de veracidade dos casos informados ao longo do dia. (Não estou aqui pra criticar o governo ou um partido especifo!);
+
+> dei uma boa pesquisada e acompanhei os sites de rastreio do mundo. encontrei esse site chamado BNO News: https://bnonews.com/index.php/2020/04/the-latest-coronavirus-cases/
+
+> incrivelmente eles atualizam as informações bem rápido e coletam dados das secretarias de governos locais e divulgam as fontes das noticias. Quase todos os sites que pesquisei retiram os dados de lá. Eles acompanham não so o Brasil, mas todo o mundo;
+
+> pesquisei mais um pouco e achei uma API que fornece dados em JSON e captam dados direto desse site BNO News e outros sites rápidos em noticia. Aqui vai a API: https://rapidapi.com/astsiatsko/api/coronavirus-monitor?endpoint=apiendpoint_1f6e9f84-d051-4d4d-9106-8bbeb3f162c4. 
+
+> Integrei tudo na minha app, lá os casos informados e recuperados são coletados diretamente da API mundial e são atualizados rapidamente, e os casos confirmados óbitos e mortalidade são comprovados a tardinha através do boletim oficial assegurando ou não o que os dados da API e dos sites de rastreio mundiais fornecem ao longo do dia.
+
+> Ai vai o link da app que desenvolvi pra quem ainda não tem :https://covid-19-brasil.github.io/tracker/
+
+> Para ter maior transparência nos dados informados também vou disponibilizar o código fonte do site (alguns podem se aproveitar para talvez ganhar dinheiro com isso!). Porém não tenho interesse algum em dinheiro ou restrição de informações. 
+
+> Dessa forma ai vai os scripts que desenvolvi para  quem quiser ver como a app foi construída, mostrando que não tem nada manipulado por trás das cortinas. link github: https://github.com/covid-19-brasil/covid-19-brasil.github.io 
+
+> espero poder ter ajudado de alguma forma. Devemos nos unir em prol de um país melhor e ser ao máximo transparentes e comprometidos com a verdade.
+
+
 - Copyright 2020 © <a href="">Iury Coelho</a>.
 
