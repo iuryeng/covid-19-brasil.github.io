@@ -1,4 +1,6 @@
 
+//Variáveis Globais  versao 1.0 - Atualizações do Ministério da Saúde
+
 const json_data = ("covid.json");
 const json_data_occurrence = ("occurrence.json");
 const json_data_region = ("casos_regiao.json");
@@ -16,6 +18,82 @@ let estadoObitos = [];
 let estadoMaiorObtito ="";
 
 
+//Variáveis Globais versao 2.0 - Atualizações com informações mundiais
+
+let totalCases; // total de casos no mundo 
+let totalDeaths; // total de mortes no mundo
+let totalRecovered // numero de casos recuperados
+let newCases; // novos casos no mundo
+let newDeaths; // novas mortes no mundo 
+let statisticDate; //data da ultima atualização dos dados
+let inforCountry=[];  //todas as informações por pais 
+let inforCountryActual=[]; //ultimas informações por pais 
+let inforSupectCasesBrazil; //casos supeitos -- dados gerados a partir da api mundial -- no formato N,NNN
+let inforRecoverdBrazil;
+let inforSupectCasesBrazilString;// casos supeitos no formato NNNN 
+
+let affectedCountrys=[]; // array de paises afetados
+
+
+const URL_PARTICULAR_BRAZIL = "https://coronavirus-monitor.p.rapidapi.com/coronavirus/cases_by_particular_country.php?country=Brazil";
+const URL_AFFECTED = "https://coronavirus-monitor.p.rapidapi.com/coronavirus/affected.php";
+const URL_WORLD_STATE = "https://coronavirus-monitor.p.rapidapi.com/coronavirus/worldstat.php";
+
+const DEF_API =  { // definicoes da api
+    "method": "GET",
+    "headers": {
+        "x-rapidapi-host": "coronavirus-monitor.p.rapidapi.com",
+        "x-rapidapi-key": "0341a96610mshfd1d9fba2b8e0a6p1fff43jsne24da21b3b00" 
+    }
+};
+
+//Definição das Funções
+
+/*--------------------------Casos Particulares por pais---------------------------------------*/
+function getDateParticularCountry(){ // funcao para pegar valores de dados por pais
+fetch(URL_PARTICULAR_BRAZIL, DEF_API).then(response => response.json().then(data => { // resposta do json 
+	   inforCountry = data.stat_by_country;     //atribui a variavel inforCountry as informações colhidas no array stat_by_country
+	   inforCountryActual =  inforCountry.slice(-1)[0]; // pegar ultimo elemento do array 
+	   inforSupectCasesBrazil = inforCountryActual.total_cases
+	   inforRecoverdBrazil = inforCountryActual.total_recovered;
+	   inforSupectCasesBrazilString = inforSupectCasesBrazil.replace(/[,]+/g, '');// regex para retirar a ','
+	   
+	  document.getElementById("num-suspeitos").innerHTML =  inforSupectCasesBrazilString;
+	  document.getElementById("recuperados").innerHTML = inforRecoverdBrazil;	
+	}))
+	.catch(err => {
+	    console.log(err);
+	});
+}
+/*--------------------------Paises Afetados---------------------------------------*/
+
+function getDateAffected(){ // funcao para pegar array com paises afetados
+fetch(URL_AFFECTED, DEF_API).then(response => response.json().then(data => {  // resposta do json  
+	    affectedCountrys = data.affected_countries; //atribui a variavel affectedCountrys as informações colhidas no  array affected_countries 
+	}))  
+	.catch(err => {
+	    console.log(err);
+	});
+}
+/*--------------------------Casos no mundo---------------------------------------*/
+function getDateWorld(){
+	fetch(URL_WORLD_STATE, DEF_API).then(response => response.json().then(data => { // resposta do json 
+	    totalCases = data.total_cases; //atribui a variavel totalCases as informações colhidas no array total_cases
+	    totalDeaths = data.total_deaths;
+	    newCases = data.new_cases; //atribui a variavel newCases as informações colhidas no array new_cases
+	    newDeaths = data.new_deaths; //atribui a variavel newDeaths as informações colhidas no array new_deaths
+	    totalRecovered = data.total_recovered; //atribui a variavel Totalrecovered as informações colhidas no array total_recovered
+	    statisticDate = data.statistic_taken_at;    
+	    document.getElementById("atualizacao-api").innerHTML = `${statisticDate} (UTC)`;	       	    
+	}))
+	.catch(err => {
+	    console.log(err);
+	});
+}
+
+
+
+/*-----versão 1.0------------------------------------------------------------------------------*/
 
 $(document).ready(function(){ // populando a tabela de dados a partir do arquivo json
 	$.getJSON("covid.json", function(data){
@@ -48,7 +126,7 @@ async function createChart() { // funcao para construir o chart covid
 		        borderColor: 'mediumturquoise',
 		        borderWidth: 2		          
 		    },{
-		        label: 'Obitos',
+		        label: 'Óbitos',
 		        data: yobitos,                
 		        type:'line',
 		        fill:false,
@@ -224,6 +302,12 @@ async function getDateChart() { // funcao para capurar do arquivo json os dados 
 }
 
 
-createChart();
-createChartOccurrence();
-createChartRegion();
+/*-----Ativação das Fuções-------*/
+createChart();//Criação do gráfico 
+createChartOccurrence();//Criação do gráfico 
+createChartRegion();//Criação do gráfico 
+
+getDateParticularCountry();//Pegar dados particular por pais 
+getDateAffected(); // Pegar os paises afetados 
+getDateWorld();  //Pegar estatísticas mundiais 
+
