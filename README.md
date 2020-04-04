@@ -7,6 +7,8 @@ Repositório de aplicação web para acompanhamento dos casos de covid-19 no Bra
 
 Devido a situação atual em que nosso país se encontra e os inúmeros sites que divulgam fake news a respeito do número de casos de covid-19, resolvi criar uma aplicação web que coleta dados sobre o corona virus. A aplicação  é atualizada  o mais rápido possível e pretende fornecer dados consistentes em tabela e gráficos. 
 
+- Motivação e Resultados
+
 > Basicamente a app web faz um misto entre informações oficiais do ministério da saúde e também de fontes mundiais a respeito de dados coletados em vários sites de notícias e governos locais;
 
 > Conversando com alguns amigos da UFCG tentei acatar algumas sugestões e inovar em uma aplicação que fornecem dados consistentes o mais rápido possível.
@@ -22,12 +24,6 @@ Devido a situação atual em que nosso país se encontra e os inúmeros sites qu
 > pesquisei mais um pouco e achei uma API que fornece dados em JSON e captam dados direto desse site BNO News e outros sites rápidos em noticia. Aqui vai a API: https://rapidapi.com/astsiatsko/api/coronavirus-monitor?endpoint=apiendpoint_1f6e9f84-d051-4d4d-9106-8bbeb3f162c4. 
 
 > Integrei tudo na minha app, lá os casos informados e recuperados são coletados diretamente da API mundial e são atualizados rapidamente, e os casos confirmados óbitos e mortalidade são comprovados a tardinha através do boletim oficial assegurando ou não o que os dados da API e dos sites de rastreio mundiais fornecem ao longo do dia.
-
-> Ai vai o link da app que desenvolvi pra quem ainda não tem :https://covid-19-brasil.github.io/tracker/
-
-> Para ter maior transparência nos dados informados também vou disponibilizar o código fonte do site (alguns podem se aproveitar para talvez ganhar dinheiro com isso!). Porém não tenho interesse algum em dinheiro ou restrição de informações. 
-
-> Dessa forma ai vai os scripts que desenvolvi para  quem quiser ver como a app foi construída, mostrando que não tem nada manipulado por trás das cortinas. link github: https://github.com/covid-19-brasil/covid-19-brasil.github.io 
 
 > espero poder ter ajudado de alguma forma. Devemos nos unir em prol de um país melhor e ser ao máximo transparentes e comprometidos com a verdade.
 
