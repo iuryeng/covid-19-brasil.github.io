@@ -25,6 +25,8 @@ Devido a situação atual em que nosso país se encontra e os inúmeros sites qu
 
 > Integrei tudo na minha app, lá os casos informados e recuperados são coletados diretamente da API mundial e são atualizados rapidamente, e os casos confirmados óbitos e mortalidade são comprovados a tardinha através do boletim oficial assegurando ou não o que os dados da API e dos sites de rastreio mundiais fornecem ao longo do dia.
 
+> Ai vai o link da app web funcional:https://covid-19-brasil.github.io/tracker/
+
 > espero poder ter ajudado de alguma forma. Devemos nos unir em prol de um país melhor e ser ao máximo transparentes e comprometidos com a verdade.
 
 
