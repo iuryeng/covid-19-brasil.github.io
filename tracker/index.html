@@ -24,32 +24,53 @@
 		<div class="header">
 			<i class="fas fa-virus fa-3x"></i>
 		  <h1>Covid-19 Brasil Infor</h1>		   
-		  <h2>Acompanhe os casos de infecção no Brasil</h2>
-		  <span>Atualizado em: Sexta, 03 de Abril de 2020, 18h41  </span>
-		  <p><span>Referências:<a class="a-color" href="https://saude.gov.br/" target="_blank"> Ministerio da Saúde</a> </span></p>  
+		  <h2>Acompanhe os casos de infecção no Brasil</h2>	
+		  
+		  <form class="form-references">
+			  <fieldset class="fieldset-references">
+			  <legend>Referências</legend>	 
+				  <p><span><a class="a-color" href="https://saude.gov.br/" target="_blank"><span class="panel confirmado">confirmados</span><span class="panel mortes">óbitos</span><span class="panel mortalidade">mortalidade</span><span class="panel maior-letalidade">maioria</span> ▶ Ministério da Saúde</a>. Atualizado em: 03-04-2020 18:41:02 (GMT)</span></p>
+				  <p><span><a class="a-color" href="https://bnonews.com/index.php/2020/04/the-latest-coronavirus-cases/" target="_blank"><span class="panel informados">informados</span><span class="panel recuperados">recuperados</span> ▶ BNO news</a>. Atualizado em: </span><span id="atualizacao-api"></span></p>
+			   </fieldset>
+		  </form>
+
 		</div>
-		<div class="row-top-indicators">
-		    <div class="column-top-indicators" style="color: mediumturquoise;">
-		    	<i class="fas fa-clipboard-check fa-2x"></i>
-			    <h2>Confirmados</h2>
-			    <p id="num-confirmado" class="p-top-nav" ></p>
-		    </div>
-		    <div class="column-top-indicators" style="color:lightcoral">
-		    	<i class="fas fa-skull-crossbones fa-2x"></i>
-			    <h2>Mortes</h2>
-			    <p id="num-obito" class="p-top-nav"></p>
-		    </div>
-		    <div class="column-top-indicators" style="color:#ffa91c">
-		    	<i class="fas fa-percent fa-2x"></i>
-			    <h2>Mortalidade</h2>
-			    <p class="p-top-nav">4,0%</p>
-		    </div>  
-		    <div class="column-top-indicators" style="color:darkslateblue">
-		    	<i class="fas fa-dizzy fa-2x"></i>
-			    <h2>Maior Letalidade</h2>
-			    <p id="maior-letalidade" class="p-top-nav"></p>			    
-		    </div> 
+		<fieldset class="fieldset-indicators">
+	    <legend>Painel dos Casos</legend>	
+		<div class="row-top-indicators">  		      
+				 <div class="column-top-indicators" style="color: #00539F;">
+			    	<i class="fas fa-search-location fa-2x"></i>
+				    <h2>Informados</h2>
+				    <p id="num-suspeitos" class="p-top-nav" ></p>
+			    </div>
+			    <div class="column-top-indicators" style="color: mediumturquoise;">
+			    	<i class="fas fa-clipboard-check fa-2x"></i>
+				    <h2>Confirmados</h2>
+				    <p id="num-confirmado" class="p-top-nav" ></p>
+			    </div>
+			    <div class="column-top-indicators" style="color:lightcoral">
+			    	<i class="fas fa-skull-crossbones fa-2x"></i>
+				    <h2>Óbitos</h2>
+				    <p id="num-obito" class="p-top-nav"></p>
+			    </div>
+			    <div class="column-top-indicators" style="color:#ffa91c">
+			    	<i class="fas fa-percent fa-2x"></i>
+				    <h2>Mortalidade</h2>
+				    <p class="p-top-nav">4,0%</p>
+			    </div>  
+			     <div class="column-top-indicators" style="color:mediumseagreen">
+			    	<i class="far fa-smile fa-2x"></i>
+				    <h2>Recuperados</h2>
+				    <p id ="recuperados"class="p-top-nav"></p>
+			    </div> 
+			    <div class="column-top-indicators" style="color:darkslateblue">
+			    	<i class="fas fa-dizzy fa-2x"></i>
+				    <h2>Maioria</h2>
+				    <p id="maior-letalidade" class="p-top-nav"></p>			    
+			    </div> 
+		   
 		</div>
+	</fieldset>
 		<div class="topnav">
 			
 			<!--<a href="https://www.saude.gov.br/images/pdf/2020/marco/29/29----COVID.pdf" target="_blank"><i class="fas fa-chart-line fa-3x"></i></a>-->
@@ -82,6 +103,12 @@
 		<p style="text-align: center;"><i class="fas fa-globe"></i> for World by <a style="color:white" href="https://www.freecodecamp.org/iurycoelho" target="_blank">@iurycoelho</a></p>	
 	</footer>
 </html>
+
+
+
+
+
+
 
 
 
