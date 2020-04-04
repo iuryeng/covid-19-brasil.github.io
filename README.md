@@ -11,7 +11,7 @@ Devido a situação atual em que nosso país se encontra e os inúmeros sites qu
 
 > Basicamente a app web faz um misto entre informações oficiais do ministério da saúde e também de fontes mundiais a respeito de dados coletados em vários sites de notícias e governos locais;
 
-> Conversando com alguns amigos da UFCG tentei acatar algumas sugestões e inovar em uma aplicação que fornecem dados consistentes o mais rápido possível.
+> Tentei inovar em uma aplicação que fornecem dados consistentes o mais rápido possível.
 
 > Tive trabalhando alguns dia nisso!,  pra tentar inovar um pouco mais;
 
