@@ -13,7 +13,7 @@ Devido a situação atual em que nosso país se encontra e os inúmeros sites qu
 
 > Tentei inovar em uma aplicação que fornecem dados consistentes o mais rápido possível.
 
-> Tive trabalhando alguns dia nisso!,  pra tentar inovar um pouco mais;
+> Estive trabalhando alguns dia nisso!;
 
 > Notei que o site do governo atualiza as informações sempre a tardinha e não consta o número de casos recuperados nem o número de casos informados pelas secretarias em tempo hábil. Por exemplo, depois das 21 hrs se algum site de governo local for notificado, os dados só irao ser confirmados pelo ministério a tardinha, talvez por  medidas até de veracidade dos casos informados ao longo do dia. (Não estou aqui pra criticar o governo ou um partido especifo!);
 
