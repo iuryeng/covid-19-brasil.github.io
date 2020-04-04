@@ -5,9 +5,9 @@ Copyright 2020 © <a href="https://www.freecodecamp.org/iurycoelho">Iury Coelho<
 Acesse <a href="https://covid-19-brasil.github.io/tracker/">Covid-19-Brasil-Info</a>.
 
 
-Devido a situação atual em que nosso país se encontra e os inúmeros sites que divulgam fake news a respeito do número de casos de covid-19, resolvi criar uma aplicação web que coleta dados sobre o corona virus. A aplicação  é atualizada  o mais rápido possível e pretende fornecer dados consistentes em tabela e gráficos. 
-
 - Motivação e Resultados
+
+> Devido a situação atual em que nosso país se encontra e os inúmeros sites que divulgam fake news a respeito do número de casos de covid-19, resolvi criar uma aplicação web que coleta dados sobre o corona virus. A aplicação  é atualizada  o mais rápido possível e pretende fornecer dados consistentes em tabela e gráficos. 
 
 > Basicamente a app web faz um misto entre informações oficiais do ministério da saúde e também de fontes mundiais a respeito de dados coletados em vários sites de notícias e governos locais;
 
