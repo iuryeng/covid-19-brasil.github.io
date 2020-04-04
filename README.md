@@ -3,7 +3,7 @@
 > https://covid-19-brasil.github.io/tracker/
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-Copyright 2020 © <a href="">Iury Coelho</a>.
+Copyright 2020 © <a href="https://www.freecodecamp.org/iurycoelho">Iury Coelho</a>.
 
 Devido a situação atual em que nosso país se encontra e os inúmeros sites que divulgam fake news a respeito do número de casos de covid-19, resolvi criar uma aplicação web que coleta dados sobre o corona virus. A aplicação  é atualizada  o mais rápido possível e pretende fornecer dados consistentes em tabela e gráficos. 
 
