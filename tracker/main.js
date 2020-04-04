@@ -27,16 +27,16 @@ let newCases; // novos casos no mundo
 let newDeaths; // novas mortes no mundo 
 let statisticDate; //data da ultima atualização dos dados
 let inforCountry=[];  //todas as informações por pais 
+
 let inforCountryActual=[]; //ultimas informações por pais 
 let inforSupectCasesBrazil; //casos supeitos -- dados gerados a partir da api mundial -- no formato N,NNN
-let inforSupectCasesBrazilString;// casos supeitos no formato NNNN 
 let inforRecoverdBrazil;
- 
+let inforSupectCasesBrazilString;// casos supeitos no formato NNNN 
 
 let affectedCountrys=[]; // array de paises afetados
 
 
-const URL_PARTICULAR_BRAZIL = "https://coronavirus-monitor.p.rapidapi.com/coronavirus/cases_by_particular_country.php?country=Brazil";
+const URL_PARTICULAR = "https://coronavirus-monitor.p.rapidapi.com/coronavirus/cases_by_country.php";
 const URL_AFFECTED = "https://coronavirus-monitor.p.rapidapi.com/coronavirus/affected.php";
 const URL_WORLD_STATE = "https://coronavirus-monitor.p.rapidapi.com/coronavirus/worldstat.php";
 
@@ -52,14 +52,16 @@ const DEF_API =  { // definicoes da api
 
 /*--------------------------Casos Particulares por pais---------------------------------------*/
 function getDateParticularCountry(){ // funcao para pegar valores de dados por pais
-fetch(URL_PARTICULAR_BRAZIL, DEF_API).then(response => response.json().then(data => { // resposta do json 
-	   inforCountry = data.stat_by_country;     //atribui a variavel inforCountry as informações colhidas no array stat_by_country
-	   inforCountryActual =  inforCountry.slice(-1)[0]; // pegar ultimo elemento do array 
-	   inforSupectCasesBrazil = inforCountryActual.total_cases
-	   inforRecoverdBrazil = inforCountryActual.total_recovered;
-	   inforSupectCasesBrazilString = inforSupectCasesBrazil.replace(/[,]+/g, '');// regex para retirar a ','
+fetch(URL_PARTICULAR, DEF_API).then(response => response.json().then(data => { // resposta do json 
 	   
-	  document.getElementById("num-suspeitos").innerHTML =  inforSupectCasesBrazilString;
+
+	   inforCountry = data.countries_stat;     //atribui a variavel inforCountry as informações colhidas no array stat_by_country
+	   //inforCountryActual =  inforCountry.slice(-1)[0]; // pegar ultimo elemento do array 
+	   inforSupectCasesBrazil = inforCountry[14].cases;
+	   inforRecoverdBrazil = inforCountry[14].total_recovered;
+	   inforSupectCasesBrazilString = inforSupectCasesBrazil.replace(/[,]+/g, '');// regex para retirar a ','*/
+	   
+	  document.getElementById("num-suspeitos").innerHTML =  inforSupectCasesBrazil;
 	  document.getElementById("recuperados").innerHTML = inforRecoverdBrazil;	
 	}))
 	.catch(err => {
@@ -85,7 +87,7 @@ function getDateWorld(){
 	    newDeaths = data.new_deaths; //atribui a variavel newDeaths as informações colhidas no array new_deaths
 	    totalRecovered = data.total_recovered; //atribui a variavel Totalrecovered as informações colhidas no array total_recovered
 	    statisticDate = data.statistic_taken_at;    
-	    document.getElementById("atualizacao-api").innerHTML = `${statisticDate} (UTC)`;	       	    
+	    document.getElementById("atualizacao-api").innerHTML = `${data.statistic_taken_at} (UTC)`;	       	    
 	}))
 	.catch(err => {
 	    console.log(err);
@@ -299,7 +301,7 @@ async function getDateChart() { // funcao para capurar do arquivo json os dados 
 	estadoMaiorObtito = estadoObitos[maiorNumObitos]; //capturando o estado com maior obito	
     document.getElementById("num-confirmado").innerHTML = numConfirmados; //imprimindo numero de confirmados no top menu
     document.getElementById("num-obito").innerHTML = numMortos;	//imprimindo numero de mortos no top menu
-    //document.getElementById("maior-letalidade").innerHTML = `${estadoMaiorObtito}: ${maiorNumObitos}`; //imprimindo esatdo com maior letalidade
+    document.getElementById("maior-letalidade").innerHTML = `${estadoMaiorObtito}: ${maiorNumObitos}`; //imprimindo esatdo com maior letalidade
 }
 
 
