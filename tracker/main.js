@@ -29,8 +29,9 @@ let statisticDate; //data da ultima atualização dos dados
 let inforCountry=[];  //todas as informações por pais 
 let inforCountryActual=[]; //ultimas informações por pais 
 let inforSupectCasesBrazil; //casos supeitos -- dados gerados a partir da api mundial -- no formato N,NNN
-let inforRecoverdBrazil;
 let inforSupectCasesBrazilString;// casos supeitos no formato NNNN 
+let inforRecoverdBrazil;
+ 
 
 let affectedCountrys=[]; // array de paises afetados
 
