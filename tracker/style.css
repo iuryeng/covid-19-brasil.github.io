@@ -32,13 +32,12 @@ span{
 
 .fieldset-indicators
 {
-  border-radius: 10px;
+ 
   border-width: 1.7px;
   border-color: #343c49;
   margin-top:30px;
-  margin-bottom: 30px;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-bottom: 30px; 
+
 }
 
 
@@ -89,9 +88,6 @@ background-color:#00539F;
 .recuperados{
 background-color:mediumseagreen;
 }
-
-
-
 
 .header {
   background-color:white;
