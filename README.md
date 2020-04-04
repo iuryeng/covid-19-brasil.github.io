@@ -15,7 +15,7 @@ Acesse <a href="https://covid-19-brasil.github.io/tracker/">Covid-19-Brasil-Info
 
 > Estive trabalhando alguns dia nisso!;
 
-> Notei que o site do governo atualiza as informações sempre a tardinha e não consta o número de casos recuperados nem o número de casos informados pelas secretarias em tempo hábil. Por exemplo, depois das 21 hrs do dia atual, se algum site de governo local for notificado, os dados só irao ser confirmados pelo ministério no fim da tarde do próximo dia, talvez por  medidas até de veracidade dos casos informados ao longo do dia. (Não estou aqui pra criticar o governo ou um partido especifo!);
+> Notei que o site do governo atualiza as informações sempre a tardinha e não consta o número de casos recuperados nem o número de casos informados pelas secretarias em tempo hábil. Por exemplo, depois das 21 hrs do dia atual, se algum site de governo local for notificado, os dados só irao ser confirmados pelo ministério no fim da tarde do próximo dia, talvez por  medidas até de veracidade dos casos informados ao longo do dia;
 
 > Dei uma boa pesquisada e acompanhei os sites de rastreio do mundo. encontrei esse site chamado BNO News: https://bnonews.com/index.php/2020/04/the-latest-coronavirus-cases/
 
