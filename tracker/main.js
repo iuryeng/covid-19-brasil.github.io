@@ -298,7 +298,7 @@ async function getDateChart() { // funcao para capurar do arquivo json os dados 
 	estadoMaiorObtito = estadoObitos[maiorNumObitos]; //capturando o estado com maior obito	
     document.getElementById("num-confirmado").innerHTML = numConfirmados; //imprimindo numero de confirmados no top menu
     document.getElementById("num-obito").innerHTML = numMortos;	//imprimindo numero de mortos no top menu
-    document.getElementById("maior-letalidade").innerHTML = `${estadoMaiorObtito}: ${maiorNumObitos}`; //imprimindo esatdo com maior letalidade
+    //document.getElementById("maior-letalidade").innerHTML = `${estadoMaiorObtito}: ${maiorNumObitos}`; //imprimindo esatdo com maior letalidade
 }
 
 
