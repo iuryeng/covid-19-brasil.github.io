@@ -61,7 +61,7 @@ fetch(URL_PARTICULAR, DEF_API).then(response => response.json().then(data => { /
 	   inforRecoverdBrazil = inforCountry[14].total_recovered;
 	   inforSupectCasesBrazilString = inforSupectCasesBrazil.replace(/[,]+/g, '');// regex para retirar a ','*/
 	   
-	  document.getElementById("num-suspeitos").innerHTML =  inforSupectCasesBrazil;
+	  document.getElementById("num-suspeitos").innerHTML =  inforSupectCasesBrazilString;
 	  document.getElementById("recuperados").innerHTML = inforRecoverdBrazil;	
 	}))
 	.catch(err => {
