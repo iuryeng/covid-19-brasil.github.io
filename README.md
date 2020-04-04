@@ -15,19 +15,19 @@ Devido a situação atual em que nosso país se encontra e os inúmeros sites qu
 
 > Tive trabalhando alguns dia nisso!,  pra tentar inovar um pouco mais;
 
-> notei que o site do governo atualiza as informações sempre a tardinha e não consta o número de casos recuperados nem o número de casos informados pelas secretarias em tempo hábil. Por exemplo, depois das 21 hrs se algum site de governo local for notificado, os dados só irao ser confirmados pelo ministério a tardinha, talvez por  medidas até de veracidade dos casos informados ao longo do dia. (Não estou aqui pra criticar o governo ou um partido especifo!);
+> Notei que o site do governo atualiza as informações sempre a tardinha e não consta o número de casos recuperados nem o número de casos informados pelas secretarias em tempo hábil. Por exemplo, depois das 21 hrs se algum site de governo local for notificado, os dados só irao ser confirmados pelo ministério a tardinha, talvez por  medidas até de veracidade dos casos informados ao longo do dia. (Não estou aqui pra criticar o governo ou um partido especifo!);
 
-> dei uma boa pesquisada e acompanhei os sites de rastreio do mundo. encontrei esse site chamado BNO News: https://bnonews.com/index.php/2020/04/the-latest-coronavirus-cases/
+> Dei uma boa pesquisada e acompanhei os sites de rastreio do mundo. encontrei esse site chamado BNO News: https://bnonews.com/index.php/2020/04/the-latest-coronavirus-cases/
 
-> incrivelmente eles atualizam as informações bem rápido e coletam dados das secretarias de governos locais e divulgam as fontes das noticias. Quase todos os sites que pesquisei retiram os dados de lá. Eles acompanham não so o Brasil, mas todo o mundo;
+> Incrivelmente eles atualizam as informações bem rápido e coletam dados das secretarias de governos locais e divulgam as fontes das noticias. Quase todos os sites que pesquisei retiram os dados de lá. Eles acompanham não so o Brasil, mas todo o mundo;
 
-> pesquisei mais um pouco e achei uma API que fornece dados em JSON e captam dados direto desse site BNO News e outros sites rápidos em noticia. Aqui vai a API: https://rapidapi.com/astsiatsko/api/coronavirus-monitor?endpoint=apiendpoint_1f6e9f84-d051-4d4d-9106-8bbeb3f162c4. 
+> Pesquisei mais um pouco e achei uma API que fornece dados em JSON e captam dados direto desse site BNO News e outros sites rápidos em noticia. Aqui vai a API: https://rapidapi.com/astsiatsko/api/coronavirus-monitor?endpoint=apiendpoint_1f6e9f84-d051-4d4d-9106-8bbeb3f162c4. 
 
 > Integrei tudo na minha app, lá os casos informados e recuperados são coletados diretamente da API mundial e são atualizados rapidamente, e os casos confirmados óbitos e mortalidade são comprovados a tardinha através do boletim oficial assegurando ou não o que os dados da API e dos sites de rastreio mundiais fornecem ao longo do dia.
 
 > Ai vai o link da app web funcional:https://covid-19-brasil.github.io/tracker/
 
-> espero poder ter ajudado de alguma forma. Devemos nos unir em prol de um país melhor e ser ao máximo transparentes e comprometidos com a verdade.
+> Espero poder ter ajudado de alguma forma. Devemos nos unir em prol de um país melhor e ser ao máximo transparentes e comprometidos com a verdade.
 
 
 - Copyright 2020 © <a href="">Iury Coelho</a>.
