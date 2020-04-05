@@ -34,7 +34,7 @@ Acesse <a href="https://covid-19-brasil.github.io/tracker/">Covid-19-Brasil-Info
 
 > Espero ter ajudado de alguma forma. Devemos nos unir em prol de um país melhor e ser ao máximo transparentes e comprometidos com a verdade.
 
->"O preço de qualquer coisa é a quantidade de vida que você troca por ela."<a href="https://pt.wikipedia.org/wiki/Interface_de_programa%C3%A7%C3%A3o_de_aplica%C3%A7%C3%B5es"> Henry David Thoreau</a>
+>"O preço de qualquer coisa é a quantidade de vida que você troca por ela."<a href="https://pt.wikipedia.org/wiki/Henry_David_Thoreau"> Henry David Thoreau</a>
 
 Att, Iury Coelho 04/04/2020.
 
