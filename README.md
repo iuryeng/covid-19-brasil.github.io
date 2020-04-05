@@ -15,19 +15,21 @@ Acesse <a href="https://covid-19-brasil.github.io/tracker/">Covid-19-Brasil-Info
 
 > Estive trabalhando alguns dias nesse objetivo!
 
-> Percebi que o site do governo atualiza as informações sempre a no fim da tarde através do boletim oficial diário. No boletim não consta o número de casos recuperados nem o número de casos informados pelas secretarias em tempo hábil. Por exemplo, depois das 21 hrs do dia atual, se algum site de secretaria de saúde local for notificado, os dados só irao ser confirmados pelo ministério no fim da tarde do próximo dia;
+> Percebi que o site do governo atualiza as informações sempre a no fim da tarde através do boletim oficial diário. No boletim não consta o número de casos recuperados nem o número de casos informados pelas secretarias em tempo hábil. 
 
-> Dei uma boa pesquisada e acompanhei alguns  sites de rastreio dos casos de covi-19 no mundo e encontrei o site  BNO News:  https://bnonews.com/index.php/2020/04/the-latest-coronavirus-cases/
+> Por exemplo, depois das 21 hrs do dia atual, se algum site da secretaria de saúde local for notificado, os dados só irão ser confirmados pelo ministério no fim da tarde do próximo dia;
 
-> Incrivelmente eles atualizam as informações bem rápido e coletam dados das secretarias de governos locais e divulgam as fontes das noticias. Quase todos os sites que pesquisei retiram os dados de lá. Eles acompanham não so o Brasil, mas todo o mundo;
+> Dei uma boa pesquisada e acompanhei alguns sites de rastreio dos casos de covi-19 e encontrei o site <a href=" https://bnonews.com/index.php/2020/04/the-latest-coronavirus-cases/"> BNO News</a>.
 
-> Pesquisei mais um pouco e achei uma API que fornece dados em JSON e captam dados direto desse site BNO News e outros sites rápidos em noticia. Aqui vai a API: https://rapidapi.com/astsiatsko/api/coronavirus-monitor?endpoint=apiendpoint_1f6e9f84-d051-4d4d-9106-8bbeb3f162c4. 
+> Incrivelmente eles atualizam as informações bem rápido e coletam dados das secretarias de governos locais e divulgam as fontes das notícias. Quase todos os sites que pesquisei retiram os dados de lá. Eles acompanham não so o Brasil, mas todo o mundo;
 
-> Integrei tudo na minha app, lá os casos informados e recuperados são coletados diretamente da API mundial e são atualizados rapidamente, e os casos confirmados óbitos e mortalidade são comprovados a tardinha através do boletim oficial assegurando ou não o que os dados da API e dos sites de rastreio mundiais fornecem ao longo do dia.
+> Pesquisei mais um pouco e achei uma <a href="">https://pt.wikipedia.org/wiki/Interface_de_programa%C3%A7%C3%A3o_de_aplica%C3%A7%C3%B5es</a>que fornece dados em JSON oriundos de vários sites de notícia ao redor do mundo. 
 
-> Ai vai o link da app web funcional:https://covid-19-brasil.github.io/tracker/
+> Integrei tudo nesta aplicação web. Aqui os casos informados e recuperados são coletados diretamente da API mundial e são atualizados rapidamente, e os casos confirmados óbitos e mortalidade são comprovados a tardinha através do boletim oficial assegurando ou não o que os dados da API e dos sites de rastreio mundiais fornecem ao longo do dia.
 
-> Espero poder ter ajudado de alguma forma. Devemos nos unir em prol de um país melhor e ser ao máximo transparentes e comprometidos com a verdade.
+> Espero ter ajudado de alguma forma. Devemos nos unir em prol de um país melhor e ser ao máximo transparentes e comprometidos com a verdade.
+
+>"O preço de qualquer coisa é a quantidade de vida que você troca por ela."<a href="https://pt.wikipedia.org/wiki/Interface_de_programa%C3%A7%C3%A3o_de_aplica%C3%A7%C3%B5es"> Henry David Thoreau</a>
 
 Att, Iury Coelho 04/04/2020.
 
