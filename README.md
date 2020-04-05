@@ -13,11 +13,11 @@ Acesse <a href="https://covid-19-brasil.github.io/tracker/">Covid-19-Brasil-Info
 
 > Tentei inovar em uma aplicação que fornecem dados consistentes o mais rápido possível.
 
-> Estive trabalhando alguns dia nisso!;
+> Estive trabalhando alguns dias nesse objetivo!
 
-> Notei que o site do governo atualiza as informações sempre a tardinha e não consta o número de casos recuperados nem o número de casos informados pelas secretarias em tempo hábil. Por exemplo, depois das 21 hrs do dia atual, se algum site de governo local for notificado, os dados só irao ser confirmados pelo ministério no fim da tarde do próximo dia, talvez por  medidas até de veracidade dos casos informados ao longo do dia;
+> Percebi que o site do governo atualiza as informações sempre a no fim da tarde através do boletim oficial diário. No boletim não consta o número de casos recuperados nem o número de casos informados pelas secretarias em tempo hábil. Por exemplo, depois das 21 hrs do dia atual, se algum site de secretaria de saúde local for notificado, os dados só irao ser confirmados pelo ministério no fim da tarde do próximo dia;
 
-> Dei uma boa pesquisada e acompanhei os sites de rastreio do mundo. encontrei esse site chamado BNO News: https://bnonews.com/index.php/2020/04/the-latest-coronavirus-cases/
+> Dei uma boa pesquisada e acompanhei alguns  sites de rastreio dos casos de covi-19 no mundo e encontrei o site  BNO News:  https://bnonews.com/index.php/2020/04/the-latest-coronavirus-cases/
 
 > Incrivelmente eles atualizam as informações bem rápido e coletam dados das secretarias de governos locais e divulgam as fontes das noticias. Quase todos os sites que pesquisei retiram os dados de lá. Eles acompanham não so o Brasil, mas todo o mundo;
 
@@ -29,7 +29,7 @@ Acesse <a href="https://covid-19-brasil.github.io/tracker/">Covid-19-Brasil-Info
 
 > Espero poder ter ajudado de alguma forma. Devemos nos unir em prol de um país melhor e ser ao máximo transparentes e comprometidos com a verdade.
 
-Att, Iury Coelho 04/04/2020
+Att, Iury Coelho 04/04/2020.
 
 
 
