@@ -24,7 +24,7 @@ Acesse <a href="https://covid-19-brasil.github.io/tracker/">Covid-19-Brasil-Info
 > Incrivelmente eles atualizam as informações bem rápido e coletam dados das secretarias de governos locais.Eles divulgam as fontes das noticias e a maior parte dos sites de notícias mundial têm como referência  as infromações desse site. Eles acompanham não so o Brasil, mas todo o mundo;
 
 > Pesquisei mais um pouco e encontrei uma 
-<a href="https://pt.wikipedia.org/wiki/Interface_de_programa%C3%A7%C3%A3o_de_aplica%C3%A7%C3%B5es">API</a> chamada <a href"https://rapidapi.com/astsiatsko/api/coronavirus-monitor/endpoints">Coronavirus Monitor</a> que fornece dados em JSON e captam dados de vários outros sites rápidos de noticia ao redor do mundo.
+<a href="https://pt.wikipedia.org/wiki/Interface_de_programa%C3%A7%C3%A3o_de_aplica%C3%A7%C3%B5es">API</a> chamada <a href="https://rapidapi.com/astsiatsko/api/coronavirus-monitor/endpoints">Coronavirus Monitor</a> que fornece dados em JSON e captam dados de vários outros sites rápidos de noticia ao redor do mundo.
 
 > Integrei tudo nesta aplicação web.
 
