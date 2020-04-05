@@ -19,7 +19,7 @@ Acesse <a href="https://covid-19-brasil.github.io/tracker/">Covid-19-Brasil-Info
 
 > O que acontece é que, por exemplo, depois das 21 hrs do dia atual, se algum site da secretaria de saúde local for notificado, os dados só irão ser divulgados ou confirmados pelo ministério da saúde no fim da tarde do próximo dia;
 
-> Pesquisei e acompanhei por vários dias alguns sites de rastreio dos casos de covid-19 no mundo e encontrei o site <a href="https://bnonews.com/index.php/2020/04/the-latest-coronavirus-cases/">BNO News:</a>.
+> Pesquisei e acompanhei por vários dias alguns sites de rastreio dos casos de covid-19 no mundo e encontrei o site <a href="https://bnonews.com/index.php/2020/04/the-latest-coronavirus-cases/">BNO News</a>.
 
 > Incrivelmente eles atualizam as informações bem rápido e coletam dados das secretarias de governos locais e divulgam as fontes das noticias. Eles acompanham não so o Brasil, mas todo o mundo;
 
