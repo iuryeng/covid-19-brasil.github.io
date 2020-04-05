@@ -179,7 +179,6 @@ height: 500px;
 }
 
 .row{  
-  border:solid 2px #343c49;
   display: flex;
   flex-direction: column;
   justify-content: center;
