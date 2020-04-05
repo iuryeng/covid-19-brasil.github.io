@@ -28,7 +28,9 @@ Acesse <a href="https://covid-19-brasil.github.io/tracker/">Covid-19-Brasil-Info
 > Pesquisei mais um pouco e encontrei uma 
 <a href="https://pt.wikipedia.org/wiki/Interface_de_programa%C3%A7%C3%A3o_de_aplica%C3%A7%C3%B5es">API</a> que fornece dados em JSON e captam dados direto do BNO News e outros sites rápidos de noticia ao redor do mundo.
 
-> Integrei tudo nesta aplicação web, aqui os casos informados e recuperados do covid-19 no Brasil são coletados diretamente da API mundial e são atualizados rapidamente, já os casos confirmados, óbitos e taxa de mortalidade são comprovados normalmente ao fim da tarde através do boletim oficial, assegurando ou não o que os dados da API e dos sites de rastreio mundiais fornecem ao longo do dia.
+> Integrei tudo nesta aplicação web.
+
+> aqui os casos informados e recuperados do covid-19 no Brasil são coletados diretamente da API mundial e são atualizados rapidamente, já os casos confirmados, óbitos e taxa de mortalidade são comprovados normalmente ao fim da tarde através do boletim oficial, assegurando ou não o que os dados da API e dos sites de rastreio mundiais fornecem ao longo do dia.
 
 > Espero ter ajudado de alguma forma. Devemos nos unir em prol de um país melhor e ser ao máximo transparentes e comprometidos com a verdade.
 
