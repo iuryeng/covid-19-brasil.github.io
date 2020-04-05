@@ -13,7 +13,7 @@ Acesse <a href="https://covid-19-brasil.github.io/tracker/">Covid-19-Brasil-Info
 
 > Estive trabalhando alguns dias para este objetivo!
 
-> Percebi que o site do governo atualiza as informações sempre ao final da tarde através do boletim oficial diário.
+> Percebi que o site do governo atualiza as informações sempre ao final da tarde através do boletim oficial diário no site do <a href="https://saude.gov.br/">Ministério da Saúde</a>.
 
 > No boletim não consta o número de casos recuperados nem o número de casos informados pelas secretarias em tempo hábil. 
 
