@@ -188,7 +188,7 @@ const myChart = new Chart(ctx, {
         },
         title: {
             display: true,
-            text: 'Evolução dos casos informados por dia',
+            text: 'Evolução dos casos confirmados por dia',
             fontSize: 25,
             fontColor:'rgb(52,60,73)'
         },
