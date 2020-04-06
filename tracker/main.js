@@ -64,7 +64,7 @@ fetch(URL_PARTICULAR, DEF_API).then(response => response.json().then(data => { /
 	  inforSupectCasesBrazilString = inforSupectCasesBrazil.replace(/[,]+/g, '');// regex para retirar a ','*/
 	   //inforRecoverdBrazil = result.total_recovered;
 	  inforDeathBrazil = result.deaths;
-	  document.getElementById("num-suspeitos").innerHTML =  inforSupectCasesBrazil;
+	  document.getElementById("num-suspeitos").innerHTML =  inforSupectCasesBrazilString;
 	  document.getElementById("obitos-informados").innerHTML =  inforDeathBrazil;	
 	}))
 	.catch(err => {
