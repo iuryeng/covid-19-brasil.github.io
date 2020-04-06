@@ -57,8 +57,8 @@ fetch(URL_PARTICULAR, DEF_API).then(response => response.json().then(data => { /
 
 	   inforCountry = data.countries_stat;     //atribui a variavel inforCountry as informações colhidas no array stat_by_country
 	   //inforCountryActual =  inforCountry.slice(-1)[0]; // pegar ultimo elemento do array 
-	   inforSupectCasesBrazil = inforCountry[13].cases;
-	   inforRecoverdBrazil = inforCountry[13].total_recovered;
+	   inforSupectCasesBrazil = inforCountry[14].cases;
+	   inforRecoverdBrazil = inforCountry[14].total_recovered;
 	   inforSupectCasesBrazilString = inforSupectCasesBrazil.replace(/[,]+/g, '');// regex para retirar a ','*/
 	   
 	  document.getElementById("num-suspeitos").innerHTML =  inforSupectCasesBrazilString;
