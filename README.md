@@ -9,7 +9,7 @@ Acesse <a href="https://covid-19-brasil.github.io/tracker/">Covid-19-Brasil-Info
 
 > Devido a situação atual em que nosso país se encontra e os inúmeros sites que divulgam fake news a respeito do número de casos de covid-19, resolvi criar uma aplicação web que coleta dados sobre o corona virus. A aplicação  é atualizada  o mais rápido possível e pretende fornecer dados consistentes em tabela e gráficos. 
 
-> Tentei inovar em uma aplicação que fornecem dados consistentes o mais rápido possível.
+> Tentei inovar em uma aplicação que fosse capaz de oferecer dados consistentes o mais rápido possível.
 
 > Estive trabalhando alguns dias para este objetivo!
 
