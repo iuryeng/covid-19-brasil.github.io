@@ -27,6 +27,7 @@ let newCases; // novos casos no mundo
 let newDeaths; // novas mortes no mundo 
 let statisticDate; //data da ultima atualização dos dados
 let inforCountry=[];  //todas as informações por pais 
+let inforDeathBrazil; // total de mortes informadas no Brazil
 let result = []; // quarda o valor do array achado em find inforCountry
 
 let inforCountryActual=[]; //ultimas informações por pais 
@@ -56,14 +57,15 @@ function getDateParticularCountry(){ // funcao para pegar valores de dados por p
 fetch(URL_PARTICULAR, DEF_API).then(response => response.json().then(data => { // resposta do json 
 	   
 
-	   inforCountry = data.countries_stat;     //atribui a variavel inforCountry as informações colhidas no array stat_by_country
+	  inforCountry = data.countries_stat;     //atribui a variavel inforCountry as informações colhidas no array stat_by_country
 	   //inforCountryActual =  inforCountry.slice(-1)[0]; // pegar ultimo elemento do array 
-	   result = inforCountry.find( seed => seed.country_name === 'Brazil' ); // procurar pelo Brazil no conjunto de arrays em inforCountry
-           inforSupectCasesBrazil = result.cases;
-	   inforSupectCasesBrazilString = inforSupectCasesBrazil.replace(/[,]+/g, '');// regex para retirar a ','*/
-	   inforRecoverdBrazil = result.total_recovered;
-	   document.getElementById("num-suspeitos").innerHTML =  inforSupectCasesBrazilString;
-	   //document.getElementById("recuperados").innerHTML = inforRecoverdBrazil;	
+	  result = inforCountry.find( seed => seed.country_name === 'Brazil' ); // procurar pelo Brazil no conjunto de arrays em inforCountry
+          inforSupectCasesBrazil = result.cases;
+	  inforSupectCasesBrazilString = inforSupectCasesBrazil.replace(/[,]+/g, '');// regex para retirar a ','*/
+	   //inforRecoverdBrazil = result.total_recovered;
+	  inforDeathBrazil = result.deaths;
+	  document.getElementById("num-suspeitos").innerHTML =  inforSupectCasesBrazil;
+	  document.getElementById("obitos-informados").innerHTML =  inforDeathBrazil;	
 	}))
 	.catch(err => {
 	    console.log(err);
