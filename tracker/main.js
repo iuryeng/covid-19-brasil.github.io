@@ -27,6 +27,7 @@ let newCases; // novos casos no mundo
 let newDeaths; // novas mortes no mundo 
 let statisticDate; //data da ultima atualização dos dados
 let inforCountry=[];  //todas as informações por pais 
+let result = []; // quarda o valor do array achado em find inforCountry
 
 let inforCountryActual=[]; //ultimas informações por pais 
 let inforSupectCasesBrazil; //casos supeitos -- dados gerados a partir da api mundial -- no formato N,NNN
@@ -57,12 +58,12 @@ fetch(URL_PARTICULAR, DEF_API).then(response => response.json().then(data => { /
 
 	   inforCountry = data.countries_stat;     //atribui a variavel inforCountry as informações colhidas no array stat_by_country
 	   //inforCountryActual =  inforCountry.slice(-1)[0]; // pegar ultimo elemento do array 
-	   inforSupectCasesBrazil = inforCountry[14].cases;
-	   inforRecoverdBrazil = inforCountry[14].total_recovered;
+	   result = inforCountry.find( seed => seed.country_name === 'Brazil' ); // procurar pelo Brazil no conjunto de arrays em inforCountry
+           inforSupectCasesBrazil = result.cases;
 	   inforSupectCasesBrazilString = inforSupectCasesBrazil.replace(/[,]+/g, '');// regex para retirar a ','*/
-	   
-	  document.getElementById("num-suspeitos").innerHTML =  inforSupectCasesBrazilString;
-	  document.getElementById("recuperados").innerHTML = inforRecoverdBrazil;	
+	   inforRecoverdBrazil = result.total_recovered;
+	   document.getElementById("num-suspeitos").innerHTML =  inforSupectCasesBrazil;
+	   document.getElementById("recuperados").innerHTML = inforRecoverdBrazil;	
 	}))
 	.catch(err => {
 	    console.log(err);
