@@ -27,19 +27,22 @@ let newCases; // novos casos no mundo
 let newDeaths; // novas mortes no mundo 
 let statisticDate; //data da ultima atualização dos dados
 let inforCountry=[];  //todas as informações por pais 
-let inforDeathBrazil; // total de mortes informadas no Brazil
-let result = []; // quarda o valor do array achado em find inforCountry
+let inforDeathBrazil;
+let result = []; // quarda o valor do array achando em find inforCountry
 
 let inforCountryActual=[]; //ultimas informações por pais 
 let inforSupectCasesBrazil; //casos supeitos -- dados gerados a partir da api mundial -- no formato N,NNN
 let inforRecoverdBrazil;
-let inforSupectCasesBrazilString;// casos supeitos no formato NNNN
+let inforSupectCasesBrazilString;// casos supeitos no formato NNNN 
 let inforCasesBrazil; //casos no Brasil
 let inforNewDeathsBrazil;
 let numMortos;
 let numConfirmados;
 
+
 let affectedCountrys=[]; // array de paises afetados
+
+
 
 
 const URL_PARTICULAR = "https://coronavirus-monitor.p.rapidapi.com/coronavirus/cases_by_country.php";
@@ -61,16 +64,16 @@ function getDateParticularCountry(){ // funcao para pegar valores de dados por p
 fetch(URL_PARTICULAR, DEF_API).then(response => response.json().then(data => { // resposta do json 
 	   
 
-	  inforCountry = data.countries_stat;     //atribui a variavel inforCountry as informações colhidas no array stat_by_country
+	   inforCountry = data.countries_stat;     //atribui a variavel inforCountry as informações colhidas no array stat_by_country
 	   //inforCountryActual =  inforCountry.slice(-1)[0]; // pegar ultimo elemento do array 
-	  result = inforCountry.find( seed => seed.country_name === 'Brazil' ); // procurar pelo Brazil no conjunto de arrays em inforCountry
-          inforCasesBrazil = result.cases;
-	  inforCasesBrazilString = inforCasesBrazil.replace(/[,]+/g, '');// regex para retirar a ','*/
+	   result = inforCountry.find( seed => seed.country_name === 'Brazil' ); // procurar pelo Brazil no conjunto de arrays em inforCountry
+       inforCasesBrazil = result.cases;
+	   inforCasesBrazilString = inforCasesBrazil.replace(/[,]+/g, '');// regex para retirar a ','*/
 	   //inforRecoverdBrazil = result.total_recovered;
-	  inforNewDeathsBrazil = parseFloat(result.deaths) - numMortos;
-	  inforSupectCasesBrazil = parseFloat(inforCasesBrazilString) - numConfirmados;
+	   inforNewDeathsBrazil = parseFloat(result.deaths) - numMortos;
+	   inforSupectCasesBrazil = parseFloat(inforCasesBrazilString) - numConfirmados;
 	  document.getElementById("num-suspeitos").innerHTML =  inforSupectCasesBrazil;
-	  document.getElementById("obitos-informados").innerHTML =  inforNewDeathsBrazil;
+	  document.getElementById("obitos-informados").innerHTML =  inforNewDeathsBrazil;	
 	}))
 	.catch(err => {
 	    console.log(err);
@@ -94,12 +97,12 @@ function getDateWorld(){
 	    newCases = data.new_cases; //atribui a variavel newCases as informações colhidas no array new_cases
 	    newDeaths = data.new_deaths; //atribui a variavel newDeaths as informações colhidas no array new_deaths
 	    totalRecovered = data.total_recovered; //atribui a variavel Totalrecovered as informações colhidas no array total_recovered
-	    statisticDate = data.statistic_taken_at; 
-            let dataCerta = moment(statisticDate).subtract(3, 'hours');
-            let dataValida = dataCerta.format('lll');
-            let horaAtualizacao = moment(dataValida).startOf(statisticDate).fromNow();
-	    document.getElementById("atualizacao-api").innerHTML = `${horaAtualizacao}`;
-	           	    
+	    statisticDate = data.statistic_taken_at;    
+	   let dataCerta = moment(statisticDate).subtract(3, 'hours');
+       let dataValida = dataCerta.format('lll');
+       let horaAtualizacao = moment(dataValida).startOf(statisticDate).fromNow();
+
+	    document.getElementById("atualizacao-api").innerHTML = `${horaAtualizacao}`;	       	    
 	}))
 	.catch(err => {
 	    console.log(err);
@@ -200,7 +203,7 @@ const myChart = new Chart(ctx, {
         },
         title: {
             display: true,
-            text: 'Evolução dos casos confirmados por dia',
+            text: 'Evolução dos casos informados por dia',
             fontSize: 25,
             fontColor:'rgb(52,60,73)'
         },
@@ -263,38 +266,6 @@ async function createChartRegion(){ // funcao para construir o chart de classifi
 }
 
 
-
-  function sum(arr, n) { // funcao para somar um array a partir de um intervalo n 
-	    var sum = 0;
-	    for (var i = 0; i < n; i++) {
-	        sum += arr[i];
-	    }
-	    return sum; 
-	}
-
-
-function getDateChart(){
-	fetch(json_data).then(response => response.json().then(data => { // resposta do json 
-
-		for (var i = 0; i< data.length; i++){
-			xlabels.push((data[i]["estado"]));
-			ylabels.push((data[i]["casosConfirmados"]));
-			yobitos.push((data[i]["obitos"]));	
-	}	
-	numEstados = xlabels.length;
-	
-	numConfirmados = sum(ylabels,numEstados); // somando numero de casos confirmados
-	numMortos = sum(yobitos,numEstados); // somando numero de obitos 
-	document.getElementById("num-confirmado").innerHTML = numConfirmados; //imprimindo numero de confirmados no top menu
-    document.getElementById("num-obito").innerHTML = numMortos;	//imprimindo numero de mortos no top menu
-	           	    
-	}))
-	.catch(err => {
-	    console.log(err);
-	});
-}
-
-
 async function getDateRegion(){ // funcao para capurar do arquivo json os dados do grafico de ocorrencias por regiao
 	const response = await fetch(json_data_region);
 	const data = await response.json();
@@ -316,13 +287,7 @@ async function getDateOccurrence(){ // funcao para capurar do arquivo json os da
 	}	
 }
 
-/*  function sum(arr, n) { // funcao para somar um array a partir de um intervalo n 
-	    var sum = 0;
-	    for (var i = 0; i < n; i++) {
-	        sum += arr[i];
-	    }
-	    return sum; 
-	}
+
 
 async function getDateChart() { // funcao para capurar do arquivo json os dados do grafico de casos e obtos por estado 
 	const response = await fetch(json_data);
@@ -332,8 +297,16 @@ async function getDateChart() { // funcao para capurar do arquivo json os dados 
 			ylabels.push((data[i]["casosConfirmados"]));
 			yobitos.push((data[i]["obitos"]));	
 	}	
-	numEstados = xlabels.length;  
+	numEstados = xlabels.length;
 	
+    function sum(arr, n) { // funcao para somar um array a partir de um intervalo n 
+	    var sum = 0;
+	    for (var i = 0; i < n; i++) {
+	        sum += arr[i];
+	    }
+	    return sum; 
+	}
+	"use strict";
 	numConfirmados = sum(ylabels,numEstados); // somando numero de casos confirmados
 	numMortos = sum(yobitos,numEstados); // somando numero de obitos 
 	maiorNumObitos = Math.max(...yobitos); //maior numero de mortos -- numero maximo de um array    
@@ -344,16 +317,15 @@ async function getDateChart() { // funcao para capurar do arquivo json os dados 
     document.getElementById("num-confirmado").innerHTML = numConfirmados; //imprimindo numero de confirmados no top menu
     document.getElementById("num-obito").innerHTML = numMortos;	//imprimindo numero de mortos no top menu
     //document.getElementById("maior-letalidade").innerHTML = `${estadoMaiorObtito}: ${maiorNumObitos}`; //imprimindo esatdo com maior letalidade
-}*/
+}
+
 
 /*-----Ativação das Fuções-------*/
-
 createChart();//Criação do gráfico 
 createChartOccurrence();//Criação do gráfico 
 createChartRegion();//Criação do gráfico 
 
-getDateParticularCountry();//Pegar dados particular por pais
+getDateParticularCountry();//Pegar dados particular por pais 
 getDateAffected(); // Pegar os paises afetados 
-getDateWorld();  //Pegar estatísticas mundiais  
-
+getDateWorld();  //Pegar estatísticas mundiais 
 
