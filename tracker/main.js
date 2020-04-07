@@ -28,7 +28,7 @@ let newDeaths; // novas mortes no mundo
 let statisticDate; //data da ultima atualização dos dados
 let inforCountry=[];  //todas as informações por pais 
 let inforDeathBrazil;
-let result = []; // quarda o valor do array achando em find inforCountry
+let result = []; // guarda o valor do array achando em find inforCountry
 
 let inforCountryActual=[]; //ultimas informações por pais 
 let inforSupectCasesBrazil; //casos supeitos -- dados gerados a partir da api mundial -- no formato N,NNN
