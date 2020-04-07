@@ -25,7 +25,7 @@ Acesse <a href="https://covid-19-brasil.github.io/tracker/">Covid-19-Brasil-Info
 
 > Basicamente a app web faz um misto entre informações oficiais do ministério da saúde e também de informações brasileiras e mundiais  coletadas em vários sites de notícias e governos locais;
 
-> Aqui os casos informados e óbitos informados do covid-19 no Brasil são coletados diretamente da API mundial e são atualizados rapidamente, já os casos confirmados e óbitos confirmados são comprovados normalmente ao fim da tarde através do boletim oficial, assegurando ou não o que os dados da API e dos sites de notícias mundiais e locais fornecem ao longo do dia.
+> Aqui os casos suspeitos e óbitos em análise do covid-19 no Brasil são coletados diretamente da API mundial e são atualizados rapidamente, já os casos confirmados e óbitos confirmados são comprovados normalmente ao fim da tarde através do boletim oficial, assegurando ou não o que os dados da API e dos sites de notícias mundiais e locais fornecem ao longo do dia.
 
 > Posto isso,  esta aplicação web se torna numa ferramenta poderosa contra a fake news ao mesmo tempo que pode fornecer estimativas dos casos em tempo hábil, apresentando a população e aos cientístas informações seguras a respeito dos indicadores do casos de covid-19 no Brasil.
 
