@@ -284,7 +284,13 @@ async function getDateOccurrence(){ // funcao para capurar do arquivo json os da
 	}	
 }
 
-
+  function sum(arr, n) { // funcao para somar um array a partir de um intervalo n 
+	    var sum = 0;
+	    for (var i = 0; i < n; i++) {
+	        sum += arr[i];
+	    }
+	    return sum; 
+	}
 
 async function getDateChart() { // funcao para capurar do arquivo json os dados do grafico de casos e obtos por estado 
 	const response = await fetch(json_data);
@@ -294,15 +300,7 @@ async function getDateChart() { // funcao para capurar do arquivo json os dados 
 			ylabels.push((data[i]["casosConfirmados"]));
 			yobitos.push((data[i]["obitos"]));	
 	}	
-	numEstados = xlabels.length;
-	
-    function sum(arr, n) { // funcao para somar um array a partir de um intervalo n 
-	    var sum = 0;
-	    for (var i = 0; i < n; i++) {
-	        sum += arr[i];
-	    }
-	    return sum; 
-	}
+	numEstados = xlabels.length;  
 	
 	numConfirmados = sum(ylabels,numEstados); // somando numero de casos confirmados
 	numMortos = sum(yobitos,numEstados); // somando numero de obitos 
