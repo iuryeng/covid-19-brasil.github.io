@@ -316,13 +316,15 @@ async function getDateChart() { // funcao para capurar do arquivo json os dados 
     //document.getElementById("maior-letalidade").innerHTML = `${estadoMaiorObtito}: ${maiorNumObitos}`; //imprimindo esatdo com maior letalidade
 }
 
-
 /*-----Ativação das Fuções-------*/
+
+getDateParticularCountry();//Pegar dados particular por pais
+getDateOccurrence(); //Pegar dados referentes as ocorrencias por dia 
+getDateChart(); // pegar dados de gráfico de casos e obitos por cidade
+getDateAffected(); // Pegar os paises afetados 
+getDateWorld();  //Pegar estatísticas mundiais 
 createChart();//Criação do gráfico 
 createChartOccurrence();//Criação do gráfico 
 createChartRegion();//Criação do gráfico 
 
-getDateParticularCountry();//Pegar dados particular por pais 
-getDateAffected(); // Pegar os paises afetados 
-getDateWorld();  //Pegar estatísticas mundiais 
 
