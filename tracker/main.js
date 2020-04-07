@@ -324,7 +324,6 @@ createChartRegion();//Criação do gráfico
 
 getDateParticularCountry();//Pegar dados particular por pais
 getDateOccurrence(); 
-getDateChart();
 getDateAffected(); // Pegar os paises afetados 
 getDateWorld();  //Pegar estatísticas mundiais  
 
