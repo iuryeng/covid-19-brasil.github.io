@@ -303,7 +303,7 @@ async function getDateChart() { // funcao para capurar do arquivo json os dados 
 	    }
 	    return sum; 
 	}
-	"use strict";
+	
 	numConfirmados = sum(ylabels,numEstados); // somando numero de casos confirmados
 	numMortos = sum(yobitos,numEstados); // somando numero de obitos 
 	maiorNumObitos = Math.max(...yobitos); //maior numero de mortos -- numero maximo de um array    
