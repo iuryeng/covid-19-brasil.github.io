@@ -263,6 +263,38 @@ async function createChartRegion(){ // funcao para construir o chart de classifi
 }
 
 
+
+  function sum(arr, n) { // funcao para somar um array a partir de um intervalo n 
+	    var sum = 0;
+	    for (var i = 0; i < n; i++) {
+	        sum += arr[i];
+	    }
+	    return sum; 
+	}
+
+
+function getDateChart(){
+	fetch(json_data).then(response => response.json().then(data => { // resposta do json 
+
+		for (var i = 0; i< data.length; i++){
+			xlabels.push((data[i]["estado"]));
+			ylabels.push((data[i]["casosConfirmados"]));
+			yobitos.push((data[i]["obitos"]));	
+	}	
+	numEstados = xlabels.length;
+	
+	numConfirmados = sum(ylabels,numEstados); // somando numero de casos confirmados
+	numMortos = sum(yobitos,numEstados); // somando numero de obitos 
+	document.getElementById("num-confirmado").innerHTML = numConfirmados; //imprimindo numero de confirmados no top menu
+    document.getElementById("num-obito").innerHTML = numMortos;	//imprimindo numero de mortos no top menu
+	           	    
+	}))
+	.catch(err => {
+	    console.log(err);
+	});
+}
+
+
 async function getDateRegion(){ // funcao para capurar do arquivo json os dados do grafico de ocorrencias por regiao
 	const response = await fetch(json_data_region);
 	const data = await response.json();
@@ -284,7 +316,7 @@ async function getDateOccurrence(){ // funcao para capurar do arquivo json os da
 	}	
 }
 
-  function sum(arr, n) { // funcao para somar um array a partir de um intervalo n 
+/*  function sum(arr, n) { // funcao para somar um array a partir de um intervalo n 
 	    var sum = 0;
 	    for (var i = 0; i < n; i++) {
 	        sum += arr[i];
@@ -312,7 +344,7 @@ async function getDateChart() { // funcao para capurar do arquivo json os dados 
     document.getElementById("num-confirmado").innerHTML = numConfirmados; //imprimindo numero de confirmados no top menu
     document.getElementById("num-obito").innerHTML = numMortos;	//imprimindo numero de mortos no top menu
     //document.getElementById("maior-letalidade").innerHTML = `${estadoMaiorObtito}: ${maiorNumObitos}`; //imprimindo esatdo com maior letalidade
-}
+}*/
 
 /*-----Ativação das Fuções-------*/
 
