@@ -94,8 +94,12 @@ function getDateWorld(){
 	    newCases = data.new_cases; //atribui a variavel newCases as informações colhidas no array new_cases
 	    newDeaths = data.new_deaths; //atribui a variavel newDeaths as informações colhidas no array new_deaths
 	    totalRecovered = data.total_recovered; //atribui a variavel Totalrecovered as informações colhidas no array total_recovered
-	    statisticDate = data.statistic_taken_at;    
-	    document.getElementById("atualizacao-api").innerHTML = `${data.statistic_taken_at} (UTC)`;	       	    
+	    statisticDate = data.statistic_taken_at; 
+            let dataCerta = moment(statisticDate).subtract(3, 'hours');
+            let dataValida = dataCerta.format('lll');
+            let horaAtualizacao = moment(dataValida).startOf(statisticDate).fromNow();
+	    document.getElementById("atualizacao-api").innerHTML = `${horaAtualizacao}`;
+	           	    
 	}))
 	.catch(err => {
 	    console.log(err);
