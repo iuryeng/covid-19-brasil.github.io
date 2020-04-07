@@ -353,7 +353,6 @@ createChartOccurrence();//Criação do gráfico
 createChartRegion();//Criação do gráfico 
 
 getDateParticularCountry();//Pegar dados particular por pais
-getDateOccurrence(); 
 getDateAffected(); // Pegar os paises afetados 
 getDateWorld();  //Pegar estatísticas mundiais  
 
